@@ -95,7 +95,7 @@ export function Layout() {
           </div>
           <div>
             <p className="font-semibold text-gold">Studio</p>
-            <p className="mt-3 text-sm leading-7 text-white/70">Kuala Lumpur<br />Open daily by appointment</p>
+            <p className="mt-3 text-sm leading-7 text-white/70">Kuching<br />Open daily by appointment</p>
           </div>
           <div>
             <p className="font-semibold text-gold">Consultation</p>
