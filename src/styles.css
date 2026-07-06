@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  color: #402e29;
+  background: #fffaf6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+@theme {
+  --color-ivory: #fffaf6;
+  --color-linen: #f7eee7;
+  --color-blush: #eec8c6;
+  --color-rose: #c98584;
+  --color-gold: #c79b54;
+  --color-cocoa: #402e29;
+  --color-mocha: #6f544b;
+  --color-sage: #9aa48b;
+  --shadow-soft: 0 24px 70px rgb(91 61 50 / 0.13);
+}
+
+.page-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.premium-card {
+  @apply rounded-[2rem] border border-white/70 bg-white/75 shadow-soft backdrop-blur;
+}
+
+.gold-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-cocoa px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cocoa/20 transition hover:-translate-y-0.5 hover:bg-mocha focus:outline-none focus:ring-4 focus:ring-gold/25;
+}
+
+.light-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-cocoa/15 bg-white/80 px-6 py-3 text-sm font-semibold text-cocoa transition hover:-translate-y-0.5 hover:border-gold/60 hover:bg-white focus:outline-none focus:ring-4 focus:ring-blush/35;
+}
+
+.section-kicker {
+  @apply text-xs font-bold uppercase tracking-[0.22em] text-gold;
+}
+
+.section-title {
+  @apply mt-3 text-3xl font-semibold tracking-normal text-cocoa sm:text-4xl;
+}
+
+.section-copy {
+  @apply mt-4 max-w-2xl text-base leading-8 text-mocha;
+}
+
+.fade-in {
+  animation: fadeIn 360ms ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
